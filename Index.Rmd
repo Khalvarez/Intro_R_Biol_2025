@@ -9,4 +9,4 @@ prettydoc::html_pretty:
   highlight: github
 ---
 
-kkk
+![](/Users/karinaalvarez/Desktop/BIOL 6994/Practice/khaa.jpg)
