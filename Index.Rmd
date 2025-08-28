@@ -1,0 +1,12 @@
+---
+title: "Karina Álvarez"
+subtitle: "Master's Student"
+author: "Karina Álvarez"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: 
+prettydoc::html_pretty:
+  theme: cayman
+  highlight: github
+---
+
+kkk
