@@ -1,6 +1,6 @@
 ---
-title: "Karina Álvarez"
-subtitle: "Master student"
+title: "Intro to R for Biologist"
+subtitle: "BIOL 6994/6997 grads"
 author: "Karina Álvarez"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: 
