@@ -11,3 +11,9 @@ prettydoc::html_pretty:
 
 ![](/Users/karinaalvarez/Desktop/BIOL 6994/Practice/khaa.jpg)
 
+### Tables 
+
+| Name | Age | City|
+|:----:|---:|:---:|
+| Karina | 22 | Añasco |
+| Wiliel | 26 | Añasco |
