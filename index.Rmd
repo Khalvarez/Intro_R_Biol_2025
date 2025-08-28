@@ -4,8 +4,10 @@ subtitle: "Master student"
 author: "Karina Álvarez"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: 
-prettydoc: cayman
-higlight: github
+  prettydoc::html_pretty:
+  theme: cayman
+  highlight: github
+ 
 
 ---
 
