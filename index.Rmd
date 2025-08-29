@@ -10,6 +10,6 @@ output:
  
 ---
 
-<img src="/Users/karinaalvarez/Desktop/BIOL 6994/Practice/khaa.jpg" width="3143" height="5120">
+<img src="/Users/karinaalvarez/Desktop/BIOL 6994/Practice/khaa.jpg" width="1360" height="960">
 
 
