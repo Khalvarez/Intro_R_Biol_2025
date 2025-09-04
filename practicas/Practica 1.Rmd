@@ -14,8 +14,64 @@ citation()
 
 ```{r}
 #Instalar paquetes
-install.packages('ggplot2')
-install.packages("dplyr")
+#install.packages('ggplot2')
+#install.packages("dplyr")
 #para instalar paquetes de una vez: install.packages(c("dplyr","ggplot2"))
 ```
+
+```{r, message=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+citation("dplyr")
+citation("ggplot2")
+```
+
+```{r}
+#Ayuda para entender las grapicas etc.
+?lm
+??ggplot2
+```
+
+```{r}
+1 == 2 
+"Karina"=="karina"
+"karina"!="Karina"
+5<6
+6>5
+```
+
+```{r}
+a <- 45
+a
+```
+
+```{r}
+a <- 45
+a
+48 -> b
+b
+
+a + b / a
+c <- a + b
+c
+
+a + b + c / c
+d <- a + b /a
+
+a + b / d * c
+
+x <- "tambien puede ser una frase"
+x
+```
+
+```{r}
+sqrt (16)
+abs (-5)
+log (10)
+exp (2)
+```
+
 
