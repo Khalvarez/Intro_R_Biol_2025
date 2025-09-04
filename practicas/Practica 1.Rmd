@@ -6,13 +6,13 @@ output: html_document
 ---
 
 
-```{r}
+```{r, cite}
 #Esto es para tomar la cita para nuestros artículos.
 citation()
 
 ```
 
-```{r}
+```{r, instalar paquetes }
 #Instalar paquetes
 #install.packages('ggplot2')
 #install.packages("dplyr")
@@ -24,18 +24,18 @@ library(ggplot2)
 library(dplyr)
 ```
 
-```{r}
+```{r, citar los paquetes}
 citation("dplyr")
 citation("ggplot2")
 ```
 
-```{r}
+```{r, help}
 #Ayuda para entender las grapicas etc.
 ?lm
 ??ggplot2
 ```
 
-```{r}
+```{r equivalencias}
 1 == 2 
 "Karina"=="karina"
 "karina"!="Karina"
@@ -43,12 +43,12 @@ citation("ggplot2")
 6>5
 ```
 
-```{r}
+```{r, asignar valores}
 a <- 45
 a
 ```
 
-```{r}
+```{r asignar valores}
 a <- 45
 a
 48 -> b
@@ -67,11 +67,31 @@ x <- "tambien puede ser una frase"
 x
 ```
 
-```{r}
+```{r, ecuaciones matematicas}
 sqrt (16)
 abs (-5)
 log (10)
 exp (2)
 ```
 
+
+```{r variables}
+var1 <- 10 
+var2 <- 20
+var1 
+var1 + var2 
+var3 <- var1 + var2
+var3
+```
+
+```{r verificar class}
+class(var3)
+class(x)
+```
+
+```{r, system}
+x <-Sys.time()
+x
+class(x)
+```
 
