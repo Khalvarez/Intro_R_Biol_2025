@@ -1,7 +1,7 @@
 ---
 title: "Homework 1"
 author: "Karina Álvarez"
-date: "2025-09-04"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: html_document
 ---
 <br>
@@ -81,4 +81,7 @@ library(dplyr)
 ```{r}
 ?mean()
 ```
+
+
+### DONE
 
