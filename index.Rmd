@@ -10,11 +10,38 @@ output:
  
 ---
 
-<img src="/Users/karinaalvarez/Desktop/BIOL 6994/Practice/khaa.jpg" width="250" height="350">
+
+<div style="display: flex; align-items: center;">
+
+ <div style="flex: 1;">
+   <img src="/Users/karinaalvarez/Desktop/BIOL 6994/Intro_to_R_Biol_2025/khaa.jpg" width="200" height="300">
+    
+  </div>
+
+<div style="flex: 2; padding-left: 20px;">
+  
+  Sobre mí:
+    Estudiante graduada de Antillean Adventist
+    University de bachillerato en Biología.  
+    Actualmente estudiante de maestría en la 
+    Universidad de Puerto Rico, Recinto de Mayagüez.  
+    Mis temas de interés son las interacciones
+    microbianas con las esponjas marinas.
+    </p>
+  </div>
+
+</div>
+
+  
+<img src="https://i.pinimg.com/originals/5d/8f/31/5d8f310b7e9ac74dffed03b6fa48c1dd.gif" width="100%"/>
+
+
 
 # R Tutorials
 
 [Homework 1](R tutorials/assignment1.html)
 <br>
+<br>
+[Homework 2]()
 
 
