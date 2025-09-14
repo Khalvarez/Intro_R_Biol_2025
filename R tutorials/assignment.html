@@ -12,7 +12,7 @@
 <meta name="author" content="Karina Álvarez" />
 
 
-<title>assignment 2</title>
+<title>Homework 2</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -349,9 +349,9 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">assignment 2</h1>
+<h1 class="title toc-ignore">Homework 2</h1>
 <h4 class="author">Karina Álvarez</h4>
-<h4 class="date">2025-Sep-11, 10:31 PM</h4>
+<h4 class="date">2025-Sep-14, 01:00 AM</h4>
 
 </div>
 
@@ -391,10 +391,10 @@ print(df1)</code></pre>
 <pre class="r"><code>class(df1)</code></pre>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
 </div>
-<div id="q3.-create-a-subset-of-the-df-from-q2-that-includes-only-the-first-and-second-rows.-print-the-subset.-q3.-crea-un-subconjunto-del-df-de-la-q2-que-incluya-únicamente-la-primera-y-segunda-fila.-imprime-el-subconjunto." class="section level4">
-<h4>Q3. Create a subset of the df from Q2 that includes only the first
-and second rows. Print the subset. Q3. Crea un subconjunto del df de la
-Q2 que incluya únicamente la primera y segunda fila. Imprime el
+<div id="q3.-create-a-subset-of-the-df-dataset-that-includes-only-the-first-and-second-rows.-print-the-subset..-q3.-crea-un-subconjunto-del-df-que-incluya-únicamente-la-primera-y-la-segunda-fila.-imprime-el-subconjunto." class="section level4">
+<h4>Q3. Create a subset of the df dataset that includes only the first
+and second rows. Print the subset.. Q3. Crea un subconjunto del df que
+incluya únicamente la primera y la segunda fila. Imprime el
 subconjunto.</h4>
 <pre class="r"><code>df&lt;-data.frame(
   A=c(&quot;raju&quot;,&quot;kumar&quot;,&quot;chandru&quot;,&quot;deepak&quot;,&quot;raina&quot;,&quot;dhoni&quot;, &quot;hema&quot;,&quot;vandana&quot;,&quot;bela&quot;,&quot;anand&quot;),
@@ -415,8 +415,113 @@ print(df)</code></pre>
 ## 8  vandana  38      f    Egypt
 ## 9     bela  34      f    Italy
 ## 10   anand  12      m     Peru</code></pre>
-<pre class="r"><code>class(df)</code></pre>
+<pre class="r"><code>#Subconjunto 
+df1 &lt;- df[c(1,2) ,]
+df1</code></pre>
+<pre><code>##    Name Age Gender  Country
+## 1  raju  12      m Malaysia
+## 2 kumar  34      m    India</code></pre>
+<pre class="r"><code>class(df1)</code></pre>
 <pre><code>## [1] &quot;data.frame&quot;</code></pre>
+</div>
+<div id="q4.-create-a-subset-of-the-df-from-q3-that-includes-only-the-first-and-second-columns.-print-the-subset.-q4.-crea-un-subconjunto-del-df-de-la-q3-que-incluya-únicamente-la-primera-y-segunda-columna.-imprime-el-subconjunto." class="section level4">
+<h4>Q4. Create a subset of the df from Q3 that includes only the first
+and second columns. Print the subset. Q4. Crea un subconjunto del df de
+la Q3 que incluya únicamente la primera y segunda columna. Imprime el
+subconjunto.</h4>
+<pre class="r"><code>Subset &lt;- df[ , c(1,2)]
+Subset</code></pre>
+<pre><code>##       Name Age
+## 1     raju  12
+## 2    kumar  34
+## 3  chandru  23
+## 4   deepak  67
+## 5    raina  23
+## 6    dhoni  43
+## 7     hema  23
+## 8  vandana  38
+## 9     bela  34
+## 10   anand  12</code></pre>
+</div>
+<div id="q5.-sort-the-df-from-q3-by-the-age-column-in-ascending-order.-print-the-sorted-data-frame.-q5.-ordena-el-df-de-la-q3-por-la-columna-age-en-orden-ascendente.-imprime-el-data-frame-ordenado." class="section level4">
+<h4>Q5. Sort the df from Q3 by the Age column in ascending order. Print
+the sorted data frame. Q5. Ordena el df de la Q3 por la columna Age en
+orden ascendente. Imprime el data frame ordenado.</h4>
+<pre class="r"><code>df[order(df$Age), ]</code></pre>
+<pre><code>##       Name Age Gender  Country
+## 1     raju  12      m Malaysia
+## 10   anand  12      m     Peru
+## 3  chandru  23      m    Spain
+## 5    raina  23      m Malaysia
+## 7     hema  23      f    India
+## 2    kumar  34      m    India
+## 9     bela  34      f    Italy
+## 8  vandana  38      f    Egypt
+## 6    dhoni  43      m Malaysia
+## 4   deepak  67      m  England</code></pre>
+</div>
+<div id="q6.-add-a-new-column-called-score-to-the-df-from-q3-with-the-following-values-85-90-78-88-90-92-80-90-87-100.-print-the-updated-data-frame.-q6.-agrega-una-nueva-columna-llamada-score-al-df-de-la-q3-con-los-siguientes-valores-85-90-78-88-90-92-80-90-87-100.-imprime-el-data-frame-actualizado." class="section level4">
+<h4>Q6. Add a new column called Score to the df from Q3 with the
+following values: 85, 90, 78, 88, 90, 92, 80, 90, 87, 100. Print the
+updated data frame. Q6. Agrega una nueva columna llamada Score al df de
+la Q3 con los siguientes valores: 85, 90, 78, 88, 90, 92, 80, 90, 87,
+100. Imprime el data frame actualizado.</h4>
+<pre class="r"><code>df$Score &lt;- c(85,90,78,88,90,92,80,90,87,100) 
+df</code></pre>
+<pre><code>##       Name Age Gender  Country Score
+## 1     raju  12      m Malaysia    85
+## 2    kumar  34      m    India    90
+## 3  chandru  23      m    Spain    78
+## 4   deepak  67      m  England    88
+## 5    raina  23      m Malaysia    90
+## 6    dhoni  43      m Malaysia    92
+## 7     hema  23      f    India    80
+## 8  vandana  38      f    Egypt    90
+## 9     bela  34      f    Italy    87
+## 10   anand  12      m     Peru   100</code></pre>
+</div>
+<div id="q7.-from-the-df-in-q3-create-a-subset-where-age-is-greater-than-30.-print-the-subset.-q7.-del-df-de-la-q3-crea-un-subconjunto-donde-age-sea-mayor-a-30.-imprime-el-subconjunto." class="section level4">
+<h4>Q7. From the df in Q3, create a subset where Age is greater than 30.
+Print the subset. Q7. Del df de la Q3, crea un subconjunto donde Age sea
+mayor a 30. Imprime el subconjunto.</h4>
+<pre class="r"><code>subset_df &lt;- df[df$Age &gt; 30, ]
+subset_df</code></pre>
+<pre><code>##      Name Age Gender  Country Score
+## 2   kumar  34      m    India    90
+## 4  deepak  67      m  England    88
+## 6   dhoni  43      m Malaysia    92
+## 8 vandana  38      f    Egypt    90
+## 9    bela  34      f    Italy    87</code></pre>
+</div>
+<div id="q8.-rename-the-columns-of-df-from-q3-as-person-years-gender-and-nation.-print-the-updated-data-frame.-q8.-renombra-las-columnas-del-df-de-la-q3-como-person-years-index-y-nation.-imprime-el-data-frame-actualizado.." class="section level4">
+<h4>Q8. Rename the columns of df from Q3 as Person, Years, Gender, and
+Nation. Print the updated data frame. Q8. Renombra las columnas del df
+de la Q3 como Person, Years, Index y Nation. Imprime el data frame
+actualizado..</h4>
+<pre class="r"><code>colnames(df) &lt;- c(&quot;Person&quot;,&quot;Years&quot;,&quot;Gender&quot;, &quot;Nation&quot;,&quot;Index&quot;)
+
+df</code></pre>
+<pre><code>##     Person Years Gender   Nation Index
+## 1     raju    12      m Malaysia    85
+## 2    kumar    34      m    India    90
+## 3  chandru    23      m    Spain    78
+## 4   deepak    67      m  England    88
+## 5    raina    23      m Malaysia    90
+## 6    dhoni    43      m Malaysia    92
+## 7     hema    23      f    India    80
+## 8  vandana    38      f    Egypt    90
+## 9     bela    34      f    Italy    87
+## 10   anand    12      m     Peru   100</code></pre>
+</div>
+<div id="q9.-from-the-df-in-q2-select-rows-where-age-is-greater-than-20-and-bmi-is-less-than-15.-print-the-subset.-q9.-del-df-de-la-q2-selecciona-las-filas-donde-age-sea-mayor-a-20-y-bmi-menor-a-15.-imprime-el-subconjunto." class="section level4">
+<h4>Q9. From the df in Q2, select rows where Age is greater than 20 and
+BMI is less than 15. Print the subset. Q9. Del df de la Q2, selecciona
+las filas donde Age sea mayor a 20 y BMI menor a 15. Imprime el
+subconjunto.</h4>
+<pre class="r"><code>subset_df1 &lt;- df1[c(df1$Age &gt; 20, df1$BMI &lt;15), ]
+subset_df1</code></pre>
+<pre><code>##    Name Age Gender Country
+## 2 kumar  34      m   India</code></pre>
 </div>
 
 
