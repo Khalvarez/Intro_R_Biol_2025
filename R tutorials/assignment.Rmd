@@ -97,7 +97,6 @@ df
 #### Q9. From the df in Q2, select rows where Age is greater than 20 and BMI is less than 15. Print the subset. Q9. Del df de la Q2, selecciona las filas donde Age sea mayor a 20 y BMI menor a 15. Imprime el subconjunto.
 
 ```{r}
-subset (df1, Age > 20 & BMI < 15)
 subset_df1 (df1, Age > 20 & BMI < 15)
 subset_df1
 ```
