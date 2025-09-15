@@ -1,7 +1,7 @@
 ---
 title: "Homework 2"
 author: "Karina Álvarez"
-date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+date: "2025-09-15"
 output: html_document
 ---
 <br>
@@ -29,12 +29,7 @@ print(df1)
 
 ```
 
-```{r}
-class(df1)
-```
-
 #### Q3. Create a subset of the df dataset that includes only the first and second rows. Print the subset.. Q3. Crea un subconjunto del df que incluya únicamente la primera y la segunda fila. Imprime el subconjunto.
-
 ```{r}
 df<-data.frame(
   A=c("raju","kumar","chandru","deepak","raina","dhoni", "hema","vandana","bela","anand"),
@@ -44,31 +39,30 @@ df<-data.frame(
 
 names(df) <- c("Name", "Age", "Gender", "Country")
 print(df)
- 
-#Subconjunto 
-df1 <- df[c(1,2) ,]
-df1
+```
 
+```{r}
+df1_1 <- df[c(1,2) ,]
+df1_1
 ```
 
 ```{r}
 class(df1)
 ```
 
-
 #### Q4. Create a subset of the df from Q3 that includes only the first and second columns. Print the subset. Q4. Crea un subconjunto del df de la Q3 que incluya únicamente la primera y segunda columna. Imprime el subconjunto.
 
 ```{r}
-Subset <- df[ , c(1,2)]
-Subset
+subset <- df[ , c(1,2)]
+subset
 ```
 
 #### Q5. Sort the df from Q3 by the Age column in ascending order. Print the sorted data frame. Q5. Ordena el df de la Q3 por la columna Age en orden ascendente. Imprime el data frame ordenado.
 
 ```{r}
 df[order(df$Age), ]
-
 ```
+
 
 #### Q6. Add a new column called Score to the df from Q3 with the following values: 85, 90, 78, 88, 90, 92, 80, 90, 87, 100. Print the updated data frame. Q6. Agrega una nueva columna llamada Score al df de la Q3 con los siguientes valores: 85, 90, 78, 88, 90, 92, 80, 90, 87, 100. Imprime el data frame actualizado.
 
@@ -97,9 +91,9 @@ df
 #### Q9. From the df in Q2, select rows where Age is greater than 20 and BMI is less than 15. Print the subset. Q9. Del df de la Q2, selecciona las filas donde Age sea mayor a 20 y BMI menor a 15. Imprime el subconjunto.
 
 ```{r}
+subset_df1 <- df1[(df1$Age > 20) & (df1$BMI < 15)]
 subset_df1
 ```
-
 
 #### Q10. Calculate the mean of the Age column from df in Q2. Print the result. Q10. Calcula la media de la columna Age del df de la Q2. Imprime el resultado.
 
