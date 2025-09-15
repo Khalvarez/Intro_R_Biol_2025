@@ -1,7 +1,7 @@
 ---
 title: "Homework 2"
 author: "Karina Álvarez"
-date: "2025-09-15"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: html_document
 ---
 <br>
