@@ -98,6 +98,15 @@ df
 
 ```{r}
 subset (df1, Age > 20 & BMI < 15)
-
+subset_df1 (df1, Age > 20 & BMI < 15)
+subset_df1
 ```
 
+#### Q10. Calculate the mean of the Age column from df in Q2. Print the result. Q10. Calcula la media de la columna Age del df de la Q2. Imprime el resultado.
+
+```{r}
+media <- mean(df1$Age)
+media
+```
+
+## DONE
