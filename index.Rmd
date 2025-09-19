@@ -45,7 +45,7 @@ output:
 [Homework 2](R tutorials/assignment2.html)
 <br>
 <br>
-
+[Homework 3](R tutorials/assignment3.html)
 
 
 
