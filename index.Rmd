@@ -48,4 +48,8 @@ output:
 [Homework 3](R tutorials/assignment3.html)
 
 
+# Exam Practice
+
+[Exam practice](practicas/exam_practice.html)
+
 
