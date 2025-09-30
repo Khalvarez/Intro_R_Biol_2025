@@ -1,0 +1,78 @@
+---
+title: "Tables"
+author: "Karina Álvarez"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: html_document
+---
+
+```{r warning=FALSE, message=FALSE}
+library(gaawr2)
+library(gt)
+library(dplyr)
+library(kableExtra)
+library(knitr)
+
+data(diabetes)
+head(diabetes)
+```
+
+
+```{r}
+kable(head(diabetes,5), booktabs=TRUE) %>%
+  kable_styling(font_size = 12) %>%
+  kable_styling(bootstrap_options = c("striped", full_width =F))
+```
+
+```{r}
+kable(tail(diabetes,5), digits = 2,format = "html", row.names = T) %>%
+  kable_styling(bootstrap_options = c("striped"),
+                full_width = T, 
+                font_size = 15) %>%
+  scroll_box(height = "300px")
+```
+
+```{r}
+kable(diabetes, digits = 2,format = "html", row.names = T) %>%
+  kable_styling(bootstrap_options = c("striped"),
+                full_width = T, 
+                font_size = 15) %>%
+  scroll_box(height = "300px")
+```
+
+<br><br><br>
+
+```{r}
+diabetes%>%
+  dplyr::select(ID, No_Pation, Gender, AGE)  %>%
+  gt_preview()
+```
+
+```{r}
+gt(diabetes[1:5, 1:10]) %>%
+  tab_header(
+    title = "Diabetes Dataset" ,
+    subtitle = "Formatted with gt"
+  ) %>%
+  fmt_number(
+    columns = where(is.numeric),
+    decimals = 2
+  ) %>%
+  tab_options(
+    table.font.size = 15
+  )
+
+```
+
+```{r}
+kable(head(diabetes, 5), booktabs = TRUE) %>%
+kable_styling(font_size = 12) %>%
+kable_styling(bootstrap_options = "striped", full_width = F) %>%
+add_header_above(c("Personal data" = 4, "Profile" = 10))
+```
+
+
+```{r}
+diabetes[1:6,] %>%
+  gt() %>%
+  cols_label(ID="Identification", AGE= "Age (years)")
+```
