@@ -52,6 +52,7 @@ output:
 
 [Exam practice](practicas/exam_practice.html)
 
+[Exam practice 2](practicas/Exam practice 2.html)
 
 # Exam
 
