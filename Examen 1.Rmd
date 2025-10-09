@@ -58,6 +58,16 @@ storms%>%
   arrange(desc(wind))
 ```
 
+#### 5. 
 
+```{r}
+lizards%>%
+  group_by(Site,Diameter)%>%
+  summarise(highest_total_grahami=sum(grahami))%>%
+  arrange(desc(highest_total_grahami))
+```
+
+
+# :)
 
 
