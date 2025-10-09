@@ -56,5 +56,5 @@ output:
 
 # Exam
 
-[Exam 1](Exam-1.html)
+[Exam 1](Examen-1.html)
 
