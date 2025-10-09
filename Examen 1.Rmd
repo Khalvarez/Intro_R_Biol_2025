@@ -1,9 +1,63 @@
 ---
-title: "Examen 1"
+title: "Midterm_exam"
 author: "Karina Álvarez"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
 output: html_document
 ---
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(aod)
+
+```
+
+```{r}
+msleep <-glimpse(msleep)
+head(msleep)
+storms<- storms
+head(storms)
+lizards <- lizards
+head(lizards)
+```
+
+
+
+## Preguntas:
+
+
+#### 1. 
+
+```{r}
+msleep %>%
+  filter(awake >= 12)
+```
+
+
+#### 2. 
+
+```{r}
+msleep %>% mutate(percent_day_awake=(awake /24)*100) %>%
+  dplyr::select(percent_day_awake,everything())
+```
+
+#### 3. 
+
+```{r}
+storms%>%
+  group_by(year)%>%
+  summarise(num_storms= n())
+```
+
+#### 4.
+
+```{r}
+storms%>%
+  filter(wind >50) %>%
+  arrange(desc(wind))
+```
+
 
 
 
