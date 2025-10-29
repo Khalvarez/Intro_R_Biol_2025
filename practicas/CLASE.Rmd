@@ -101,7 +101,7 @@ Continucación:
 
 ```{r}
 library(readxl)
-coronary<-read_excel(practicas/coronary.xlsx)
+coronary<-read_excel("practicas/coronary.xlsx")
 coronary
 head(coronary,3)
 ```
@@ -117,5 +117,25 @@ plot(
   ylab= "Diastolic Blood Pressure (mmHg)",
   main= "Relationship between Cholesterol and Diastolic BP"
 )
+```
+
+
+```{r}
+spearman_result <- cor.test(
+  coronary$chol,
+  coronary$dbp,
+  method = "spearman",
+  exact = FALSE
+)
+
+spearman_result
+
+
+shapiro.test(coronary$chol)
+shapiro.test(coronary$dbp)
+
+
+abline(lm(dbp ~ chol, data = coronary), col = "#31a354", lwd = 2, lty = 2)
+
 ```
 
