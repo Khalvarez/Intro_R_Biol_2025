@@ -1,0 +1,8 @@
+---
+title: "R Tutorial 4"
+subtitle: "BIOL 6994/6997 grads"
+author: "Karina Álvarez"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+---
+
+<img src="/Users/karinaalvarez/Desktop/BIOL 6994/Intro_to_R_Biol_2025/boxplot.png" width="400" height="300">
