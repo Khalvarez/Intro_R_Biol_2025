@@ -16,3 +16,6 @@ Se analizaron los datos de kilometraje mediante un one-way ANOVA para determinar
 El análisis ANOVA mostró diferencias significativas en el rendimiento de kilometraje entre las marcas (p<0.001). Para identificar las diferencias especificas entre las marcas, se realizó una prueba post-hoc de Tukey.Los resultados indicaron que los neumaticos Falken obtuvieron el mayor kilometraje, superando significativamente a las otras marcas. Bridgestone también mostró un mejor rendimiento que CEAT y Apollo, mientras que no se encontraron diferencias significativas en estas últimas. 
 
 Por lo que, los neúmaticos Falken presentaron mejor rendimiento general en kilometraje, seguido de Bridgestone, mientras que CEAT y Apollo tuvieron un desempeño muy similar y más bajo. 
+
+
+
