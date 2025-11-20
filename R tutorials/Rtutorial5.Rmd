@@ -1,0 +1,39 @@
+---
+title: "Intro to R for Biologist"
+subtitle: "BIOL 6994/6997 grads"
+author: "Karina Álvarez"
+date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
+output: 
+  prettydoc::html_pretty:
+  theme: cayman
+  highlight: github
+---
+
+```{r}
+library(readr)
+library(janitor)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+metabric <- read.csv("datatumor3.csv") %>%
+  clean_names()
+# head(metabric[, 1:5])
+```
+
+
+
+```{r}
+
+ggplot(metabric, aes(x= type_of_breast_surgery,
+                     y= tumor_size)) + geom_boxplot()
+
+```
+
+
+
+
+
+
+
