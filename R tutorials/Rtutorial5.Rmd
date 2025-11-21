@@ -1,5 +1,5 @@
 ---
-title: "Intro to R for Biologist"
+title: "R Tutorial 5"
 subtitle: "BIOL 6994/6997 grads"
 author: "Karina Álvarez"
 date: "`r format(Sys.time(), '%Y-%b-%d, %I:%M %p')`"
@@ -8,29 +8,40 @@ output:
   theme: cayman
   highlight: github
 ---
-
-```{r}
+# Liberías
+```{r, message=FALSE}
 library(readr)
 library(janitor)
 library(ggplot2)
 library(dplyr)
 ```
 
+
+# Datos
 ```{r}
 metabric <- read.csv("datatumor3.csv") %>%
   clean_names()
-# head(metabric[, 1:5])
+head(metabric[, 1:5])
 ```
 
 
-
-```{r}
+# Gráfico
+```{r, message=FALSE}
 
 ggplot(metabric, aes(x= type_of_breast_surgery,
-                     y= tumor_size)) + geom_boxplot()
-
+                     y= tumor_size,
+                     fill=type_of_breast_surgery)) +
+  geom_boxplot() + theme_classic() + 
+  labs(title= "Tumor size vs Type of surgery", x="Breast surgery", y="Tumor Size(cm)") +
+  theme(plot.title = element_text(size = 18,
+                                    face="bold",
+                                    hjust = 0.5,
+                                    color = "black")) +
+  theme(legend.position = "none")
 ```
 
+# Desglose de cambios
+Para hacer que este gráfico fuera más atractivo a la vista le añadí color utilizando la función de "fill". Además le removí los cuadriculados en el fondo para que tenga un aspecto más limpio y elegante. Adicional le removí la leyenda, ya que para mí es suficiente con los colores y los nombres de los tratamientos para poder entender la gráfica; entendiendo que una leyenda también podría confundir al lector. Por último modifique los titulos de los ejes, para darles un nombre más corto y más preciso en cuanto a las medidas; y añadí el titulo de la gráfica para que se facilite la comprensión de la data que se va a visualizar.:)
 
 
 
