@@ -49,6 +49,9 @@ output:
 <br>
 <br>
 [Homework 4](R tutorials/Rtutorial4.html)
+<br>
+<br>
+[Homework 5](R tutorials/Rtutorial5.html)
 
 # Exam Practice
 
